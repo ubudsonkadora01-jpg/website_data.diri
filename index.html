@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubudson Takyau Kadora | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===================== PARTICLE BACKGROUND ===================== -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- ===================== NAVIGASI ===================== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#home" class="nav-logo">
+                <i class="fas fa-shield-halved"></i>
+                <span>UTK</span>
+            </a>
+
+            <!-- Menu Desktop -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user-secret"></i> About</a></li>
+                <li><a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#interests" class="nav-link"><i class="fas fa-microchip"></i> Interests</a></li>
+                <li><a href="#hobbies" class="nav-link"><i class="fas fa-gamepad"></i> Hobbies</a></li>
+                <li><a href="#goals" class="nav-link"><i class="fas fa-bullseye"></i> Goals</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+
+            <!-- Jam Digital & Dark Mode Toggle -->
+            <div class="nav-right">
+                <div class="digital-clock" id="digitalClock">
+                    <i class="fas fa-clock"></i>
+                    <span id="clockTime">00:00:00</span>
+                </div>
+                <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle Light/Dark Mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <!-- Hamburger Menu -->
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================== HOME SECTION ===================== -->
+    <section id="home" class="section home-section">
+        <div class="home-content">
+            <div class="home-text animate-on-scroll">
+                <p class="greeting cyber-glitch" data-text="Hello, World!">Hello, World!</p>
+                <h1 class="name">
+                    <span class="first-name">UBUDSON</span>
+                    <span class="last-name">TAKYAU KADORA</span>
+                </h1>
+                <div class="typewriter-container">
+                    <span class="typewriter-label">&gt; </span>
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="home-description">
+                    Mahasiswa Sistem Informasi dengan passion di bidang <strong>Cybersecurity</strong> 
+                    dan <strong>Teknologi Informasi</strong>. Siap menghadapi tantangan di era digital.
+                </p>
+                <div class="home-buttons">
+                    <a href="#about" class="btn btn-primary">
+                        <i class="fas fa-user-secret"></i> Tentang Saya
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-paper-plane"></i> Hubungi Saya
+                    </a>
+                    <a href="#" class="btn btn-download" id="downloadCV">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+            <div class="home-image animate-on-scroll">
+                <div class="profile-frame">
+                    <div class="hex-border"></div>
+                    <div class="profile-img-container">
+                        <!-- Ganti src dengan path foto profil Anda -->
+                        <img src="profile.jpg" alt="Foto Ubudson Takyau Kadora" class="profile-img">
+                    </div>
+                    <div class="scan-line"></div>
+                </div>
+                <!-- Status Indicator -->
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    <span>Available for Collaboration</span>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ME SECTION ===================== -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title"><i class="fas fa-user-secret"></i> About Me</h2>
+                <div class="title-line"></div>
+                <p class="section-subtitle">// Mengenal lebih dekat tentang saya</p>
+            </div>
+            <div class="about-content">
+                <div class="about-card animate-on-scroll">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">about_me.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="cmd-prompt">$</span> <span class="cmd-text">cat personal_info.txt</span></p>
+                        <br>
+                        <p><span class="info-label">Nama Lengkap :</span> Ubudson Takyau Kadora</p>
+                        <p><span class="info-label">Status       :</span> Mahasiswa</p>
+                        <p><span class="info-label">Universitas  :</span> Universitas Merdeka Malang</p>
+                        <p><span class="info-label">Program Studi:</span> Sistem Informasi</p>
+                        <p><span class="info-label">Angkatan     :</span> 2026</p>
+                        <p><span class="info-label">Asal         :</span> Sumba, Nusa Tenggara Timur</p>
+                        <br>
+                        <p><span class="cmd-prompt">$</span> <span class="cmd-text">echo "Deskripsi"</span></p>
+                        <br>
+                        <p class="about-desc">
+                            Saya adalah seorang mahasiswa Sistem Informasi di Universitas Merdeka Malang angkatan 2026. 
+                            Berasal dari Sumba, Nusa Tenggara Timur, saya memiliki ketertarikan yang besar terhadap 
+                            dunia teknologi, komputer, dan khususnya di bidang <span class="highlight">Cybersecurity</span>. 
+                            Saya percaya bahwa teknologi adalah kunci untuk membuka peluang di masa depan, 
+                            dan saya berkomitmen untuk terus belajar dan berkembang di bidang ini.
+                        </p>
+                        <br>
+                        <p><span class="cmd-prompt">$</span> <span class="cursor-blink">_</span></p>
+                    </div>
+                </div>
+                <!-- Info Cards -->
+                <div class="about-info-grid">
+                    <div class="info-card animate-on-scroll" style="--delay: 0.1s">
+                        <div class="info-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h4>Asal</h4>
+                        <p>Sumba, NTT</p>
+                    </div>
+                    <div class="info-card animate-on-scroll" style="--delay: 0.2s">
+                        <div class="info-card-icon"><i class="fas fa-university"></i></div>
+                        <h4>Universitas</h4>
+                        <p>Unmer Malang</p>
+                    </div>
+                    <div class="info-card animate-on-scroll" style="--delay: 0.3s">
+                        <div class="info-card-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h4>Program Studi</h4>
+                        <p>Sistem Informasi</p>
+                    </div>
+                    <div class="info-card animate-on-scroll" style="--delay: 0.4s">
+                        <div class="info-card-icon"><i class="fas fa-shield-halved"></i></div>
+                        <h4>Fokus</h4>
+                        <p>Cybersecurity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EDUCATION SECTION ===================== -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+                <div class="title-line"></div>
+                <p class="section-subtitle">// Riwayat pendidikan saya</p>
+            </div>
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge">Sedang Berlangsung</div>
+                        <h3>Universitas Merdeka Malang</h3>
+                        <h4>S1 - Sistem Informasi</h4>
+                        <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2026 - Sekarang</p>
+                        <p>Menempuh pendidikan di bidang Sistem Informasi dengan fokus pada pengembangan 
+                        teknologi informasi dan keamanan siber.</p>
+                        <a href="https://maps.app.goo.gl/zpUH5FjC5cXwEs3q7?g_st=a" target="_blank" class="timeline-location"><i class="fas fa-map-marker-alt"></i> Lihat Lokasi di Google Maps</a>
+                    </div>
+                </div>
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>SMAK Santo Yohanes Neumann</h3>
+                        <h4>Sekolah Menengah Atas</h4>
+                        <p class="timeline-date"><i class="fas fa-calendar-alt"></i> Sebelum 2026</p>
+                        <p>Menyelesaikan pendidikan menengah atas di SMAK Santo Yohanes Neumann 
+                        dan membangun fondasi pengetahuan di bidang sains dan teknologi.</p>
+                        <a href="https://maps.app.goo.gl/f5us5sGzguQ8qdQRA" target="_blank" class="timeline-location"><i class="fas fa-map-marker-alt"></i> Lihat Lokasi di Google Maps</a>
+                    </div>
+                </div>
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>SMP Negeri 1 Mamboro</h3>
+                        <h4>Sekolah Menengah Pertama</h4>
+                        <p class="timeline-date"><i class="fas fa-calendar-alt"></i> Sebelum SMA</p>
+                        <p>Menyelesaikan pendidikan menengah pertama di SMP Negeri 1 Mamboro 
+                        dengan baik dan mulai mengenal dunia teknologi.</p>
+                        <a href="https://maps.app.goo.gl/mWi8rzpTVZ2wdoCx5" target="_blank" class="timeline-location"><i class="fas fa-map-marker-alt"></i> Lihat Lokasi di Google Maps</a>
+                    </div>
+                </div>
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>SDM Mamboro</h3>
+                        <h4>Sekolah Dasar</h4>
+                        <p class="timeline-date"><i class="fas fa-calendar-alt"></i> Sebelum SMP</p>
+                        <p>Menyelesaikan pendidikan dasar di SDM Mamboro dan membangun 
+                        fondasi awal pengetahuan serta semangat belajar.</p>
+                        <a href="https://maps.app.goo.gl/N9NmQRZn2iJ2tmEr8" target="_blank" class="timeline-location"><i class="fas fa-map-marker-alt"></i> Lihat Lokasi di Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS SECTION ===================== -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title"><i class="fas fa-code"></i> Skills</h2>
+                <div class="title-line"></div>
+                <p class="section-subtitle">// Kemampuan dan keahlian teknis saya</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Skill Card 1 -->
+                <div class="skill-card animate-on-scroll" style="--delay: 0.1s">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <h4>HTML5</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="skill-card animate-on-scroll" style="--delay: 0.15s">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <h4>CSS3</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="skill-card animate-on-scroll" style="--delay: 0.2s">
+                    <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                    <h4>JavaScript</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-width="60"></div></div>
+                    <span class="skill-percent">60%</span>
+                </div>
+                <!-- Skill Card 4 -->
+                <div class="skill-card animate-on-scroll" style="--delay: 0.25s">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h4>Python</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-width="55"></div></div>
+                    <span class="skill-percent">55%</span>
+                </div>
+                <!-- Skill Card 5 -->
+                <div class="skill-card animate-on-scroll" style="--delay: 0.3s">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h4>Database / SQL</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-width="50"></div></div>
+                    <span class="skill-percent">50%</span>
+                </div>
+                <!-- Skill Card 6 -->
+                <div class="skill-card animate-on-scroll" style="--delay: 0.35s">
+                    <div class="skill-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h4>Cybersecurity</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-width="45"></div></div>
+                    <span class="skill-percent">45%</span>
+                </div>
+                <!-- Skill Card 7 -->
+                <div class="skill-card animate-on-scroll" style="--delay: 0.4s">
+                    <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                    <h4>Networking</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-width="50"></div></div>
+                    <span class="skill-percent">50%</span>
+                </div>
+                <!-- Skill Card 8 -->
+                <div class="skill-card animate-on-scroll" style="--delay: 0.45s">
+                    <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                    <h4>Linux</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-width="45"></div></div>
+                    <span class="skill-percent">45%</span>
+                </div>
+                <!-- Skill Card 9 -->
+                <div class="skill-card animate-on-scroll" style="--delay: 0.5s">
+                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                    <h4>Git / GitHub</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-width="50"></div></div>
+                    <span class="skill-percent">50%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== INTERESTS SECTION ===================== -->
+    <section id="interests" class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title"><i class="fas fa-microchip"></i> My Interests</h2>
+                <div class="title-line"></div>
+                <p class="section-subtitle">// Bidang yang saya minati</p>
+            </div>
+            <div class="interests-grid">
+                <div class="interest-card animate-on-scroll" style="--delay: 0.1s">
+                    <div class="interest-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>Mempelajari keamanan sistem, ethical hacking, penetration testing, dan perlindungan data digital dari ancaman siber.</p>
+                </div>
+                <div class="interest-card animate-on-scroll" style="--delay: 0.2s">
+                    <div class="interest-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Membangun website modern dan interaktif menggunakan teknologi web terkini seperti HTML, CSS, dan JavaScript.</p>
+                </div>
+                <div class="interest-card animate-on-scroll" style="--delay: 0.3s">
+                    <div class="interest-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Networking</h3>
+                    <p>Memahami infrastruktur jaringan komputer, konfigurasi server, dan protokol komunikasi data.</p>
+                </div>
+                <div class="interest-card animate-on-scroll" style="--delay: 0.4s">
+                    <div class="interest-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Artificial Intelligence</h3>
+                    <p>Tertarik mengeksplorasi kecerdasan buatan dan machine learning untuk solusi teknologi masa depan.</p>
+                </div>
+                <div class="interest-card animate-on-scroll" style="--delay: 0.5s">
+                    <div class="interest-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3>Sistem Operasi</h3>
+                    <p>Mendalami sistem operasi khususnya Linux untuk keperluan server, keamanan, dan pengembangan.</p>
+                </div>
+                <div class="interest-card animate-on-scroll" style="--delay: 0.6s">
+                    <div class="interest-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Computing</h3>
+                    <p>Mempelajari layanan cloud, virtualisasi, dan teknologi komputasi awan untuk masa depan digital.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== HOBBIES SECTION ===================== -->
+    <section id="hobbies" class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title"><i class="fas fa-gamepad"></i> My Hobbies</h2>
+                <div class="title-line"></div>
+                <p class="section-subtitle">// Aktivitas yang saya sukai</p>
+            </div>
+            <div class="hobbies-grid">
+                <div class="hobby-card animate-on-scroll" style="--delay: 0.1s">
+                    <div class="hobby-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Gaming</h3>
+                    <p>Bermain game adalah cara saya untuk bersantai dan melatih strategi serta fokus. Saya menikmati berbagai genre game kompetitif dan strategi.</p>
+                </div>
+                <div class="hobby-card animate-on-scroll" style="--delay: 0.15s">
+                    <div class="hobby-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>Futsal</h3>
+                    <p>Bermain futsal bersama teman untuk menjaga kebugaran fisik, mengasah kelincahan, refleks cepat, dan mempererat kerja sama tim.</p>
+                </div>
+                <div class="hobby-card animate-on-scroll" style="--delay: 0.2s">
+                    <div class="hobby-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Sepak Bola</h3>
+                    <p>Olahraga lapangan besar favorit yang melatih stamina, disiplin posisi, serta strategi kepemimpinan di lapangan hijau.</p>
+                </div>
+                <div class="hobby-card animate-on-scroll" style="--delay: 0.25s">
+                    <div class="hobby-icon">
+                        <i class="fas fa-mountain-sun"></i>
+                    </div>
+                    <h3>Healing / Jalan-jalan</h3>
+                    <p>Menjelajahi tempat baru, menikmati keindahan alam, dan refreshing untuk menyegarkan pikiran setelah padatnya aktivitas belajar dan coding.</p>
+                </div>
+                <div class="hobby-card animate-on-scroll" style="--delay: 0.3s">
+                    <div class="hobby-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Coding</h3>
+                    <p>Menulis kode dan membangun proyek digital yang berguna. Selalu antusias mengeksplorasi bahasa dan teknologi baru.</p>
+                </div>
+                <div class="hobby-card animate-on-scroll" style="--delay: 0.35s">
+                    <div class="hobby-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3>Belajar Teknologi</h3>
+                    <p>Membaca literatur teknologi, mengikuti riset keamanan siber terbaru, dan mengasah pengetahuan seputar dunia IT.</p>
+                </div>
+                <div class="hobby-card animate-on-scroll" style="--delay: 0.4s">
+                    <div class="hobby-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Mendengarkan Musik</h3>
+                    <p>Musik menemani saat santai dan fokus belajar, membantu mempertahankan konsentrasi dan membangkitkan inspirasi kreatif.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== GOALS SECTION ===================== -->
+    <section id="goals" class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title"><i class="fas fa-bullseye"></i> My Goals</h2>
+                <div class="title-line"></div>
+                <p class="section-subtitle">// Tujuan dan cita-cita masa depan</p>
+            </div>
+            <div class="goals-container">
+                <!-- Main Goal -->
+                <div class="main-goal animate-on-scroll">
+                    <div class="goal-icon-large">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Menjadi Cybersecurity Specialist</h3>
+                    <p>Cita-cita utama saya adalah menjadi seorang <strong>Cybersecurity Specialist</strong> 
+                    yang profesional dan berkompeten. Saya ingin berkontribusi dalam melindungi 
+                    infrastruktur digital dari ancaman siber dan membantu membangun 
+                    ekosistem teknologi yang aman.</p>
+                </div>
+                <!-- Other Goals -->
+                <div class="goals-grid">
+                    <div class="goal-card animate-on-scroll" style="--delay: 0.1s">
+                        <div class="goal-number">01</div>
+                        <div class="goal-content">
+                            <h4><i class="fas fa-graduation-cap"></i> Lulus dengan Predikat Terbaik</h4>
+                            <p>Menyelesaikan studi S1 Sistem Informasi dengan nilai yang memuaskan dan penguasaan ilmu yang mendalam.</p>
+                        </div>
+                    </div>
+                    <div class="goal-card animate-on-scroll" style="--delay: 0.2s">
+                        <div class="goal-number">02</div>
+                        <div class="goal-content">
+                            <h4><i class="fas fa-certificate"></i> Sertifikasi Profesional</h4>
+                            <p>Meraih sertifikasi keamanan siber yang diakui secara internasional seperti CEH, CompTIA Security+, dan OSCP.</p>
+                        </div>
+                    </div>
+                    <div class="goal-card animate-on-scroll" style="--delay: 0.3s">
+                        <div class="goal-number">03</div>
+                        <div class="goal-content">
+                            <h4><i class="fas fa-globe"></i> Berkarier di Perusahaan Global</h4>
+                            <p>Bekerja di perusahaan teknologi besar atau organisasi internasional di bidang cybersecurity.</p>
+                        </div>
+                    </div>
+                    <div class="goal-card animate-on-scroll" style="--delay: 0.4s">
+                        <div class="goal-number">04</div>
+                        <div class="goal-content">
+                            <h4><i class="fas fa-hand-holding-heart"></i> Berkontribusi untuk Daerah Asal</h4>
+                            <p>Membawa ilmu dan pengalaman kembali ke Sumba, NTT untuk membantu pengembangan teknologi di daerah.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title"><i class="fas fa-envelope"></i> Contact</h2>
+                <div class="title-line"></div>
+                <p class="section-subtitle">// Mari terhubung dan berkolaborasi</p>
+            </div>
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info animate-on-scroll">
+                    <h3><i class="fas fa-satellite-dish"></i> Hubungi Saya</h3>
+                    <p>Jangan ragu untuk menghubungi saya untuk berdiskusi tentang teknologi, 
+                    cybersecurity, atau peluang kolaborasi.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>Ubudsonkadora01@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telepon</h4>
+                                <p>08131974113</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <div>
+                                <h4>Instagram</h4>
+                                <p><a href="https://instagram.com/ubud_08" target="_blank" style="color: inherit; text-decoration: none;">@ubud_08</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Lokasi</h4>
+                                <p>Malang, Jawa Timur, Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <h4>Kampus</h4>
+                                <p>Universitas Merdeka Malang</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Social Media -->
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com/ubud_08" target="_blank" class="social-link" title="Instagram (@ubud_08)"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="contact-form-container animate-on-scroll">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Nama</label>
+                            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-at"></i> Email</label>
+                            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject"><i class="fas fa-tag"></i> Subjek</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subjek pesan" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment-dots"></i> Pesan</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-shield-halved"></i>
+                    <span>Ubudson Takyau Kadora</span>
+                </div>
+                <p class="footer-text">
+                    &copy; 2026 Ubudson Takyau Kadora. All Rights Reserved.<br>
+                    <small>Built with <i class="fas fa-heart" style="color: #e74c3c;"></i> and <i class="fas fa-code" style="color: #00d4ff;"></i></small>
+                </p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== TOMBOL KEMBALI KE ATAS ===================== -->
+    <button id="backToTop" class="back-to-top" title="Kembali ke atas">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
